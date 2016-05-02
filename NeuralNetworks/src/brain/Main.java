@@ -27,9 +27,9 @@ public class Main {
 
 		int i = 0;
 
-		while (done == false)
+		while (done == false)//while loop to go until desired error is met
 		{
-			//setting the input values
+			//setting the input values and desired y 
 			if(i % 3 == 3)
 			{
 				input1.setYVal(1);
@@ -55,6 +55,7 @@ public class Main {
 				input2.setYVal(0);
 				yd = 0;
 			}
+			
 			//calculating the y value
 			hidden3.calculateYVal();
 			hidden4.calculateYVal();
@@ -146,16 +147,22 @@ public class Main {
 			temp = dt7 +  output7.getThreshold();
 			output7.setThreshold(temp);
 
-			if(Math.pow(error, 2) < .01)
+			if(Math.pow(error, 2) < .01)//check to see if the error has reached the point we want it to be
 			{
 				done = true;
 			}
-			i++;
+			i++;//just used for counting
 			System.out.println(Math.pow(error, 2));
 			System.out.println(i);
 		}
 	}
 
+	/**
+	 * the getNum static method
+	 * this method is used to generate a random number between 
+	 * -1.2 to 1.2
+	 * @return a double
+	 */
 	public static double getNum()
 	{
 		double d = 0.0;
