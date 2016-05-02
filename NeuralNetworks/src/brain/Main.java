@@ -30,26 +30,26 @@ public class Main {
 		while (done == false)//while loop to go until desired error is met
 		{
 			//setting the input values and desired y 
-			if(i % 3 == 3)
+			if(i % 4 == 0)
 			{
 				input1.setYVal(1);
 				input2.setYVal(1);
 				yd = 0;
 			}
-			if( i % 3 == 2)
+			if( i % 3 == 1)
 			{
 				input1.setYVal(1);
 				input2.setYVal(0);
 				yd = 1;
 			}
 
-			if(i % 3 == 1)
+			if(i % 3 == 2)
 			{
 				input1.setYVal(0);
 				input2.setYVal(1);
 				yd = 1;
 			}
-			if( i % 3 == 0)
+			if( i % 3 == 3)
 			{
 				input1.setYVal(0);
 				input2.setYVal(0);
